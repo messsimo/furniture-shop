@@ -1,0 +1,77 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Стили для секции Hero */
+.hero {
+    padding-top: 30px;
+}
+
+.hero .block .text {
+    position: absolute;
+    top: 260px;
+    padding-left: 110px;
+    width: 490px;
+}
+
+.hero .block .text p {
+    color: grey;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.hero .block .text button {
+    background-color: #A65CF0;
+    border: none;
+    width: 167px;
+    padding: 13px 0;
+    border-radius: 7px;
+    margin-top: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.hero .block .text button a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+}
+
+.hero .block .text button:hover {
+    background-color: #C998FB;
+}
+
+.hero .block .balls {
+    position: absolute;
+    top: 485px;
+    left: 50%;
+    display: flex;
+}
+
+.hero .block .balls .ball {
+    background-color: #333333;
+    width: 14px;
+    height: 14px;
+    border-radius: 30px;
+    margin-right: 5px;
+    opacity: 0.3;
+}
+
+.hero .block .balls .ball.active {
+    opacity: 1;
+}

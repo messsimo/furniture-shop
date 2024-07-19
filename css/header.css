@@ -1,0 +1,133 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Стили для шапки сайта */
+header .header-top {
+    background-color: #F6F6F6;
+    height: 50px;
+    display: flex;
+}
+
+header .header-top .block-1 {
+    display: flex;
+    line-height: 50px;
+    padding-left: 100px;
+}
+
+header .header-top .block-1 span {
+    color: grey;
+    padding-right: 30px;
+}
+
+header .header-top .block-1 .call img {
+    vertical-align: middle;
+}
+
+header .header-top .block-1 .call span {
+    color: #ff852e;
+}
+
+header .header-top .block-2 {
+    line-height: 50px;
+    padding-left: 250px;
+}
+
+header .header-top .block-2 span {
+    margin-right: 20px;
+    color: grey;
+}
+
+header .header-main {
+    display: flex;
+}
+
+header .header-main img {
+    width: 187px;
+    height: 27px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+header .header-main .block ul {
+    list-style: none;
+    display: flex;
+    padding-left: 280px;
+    padding-top: 30px;
+}
+
+header .header-main .block ul li {
+    margin-right: 60px;
+}
+
+header .header-main .block ul li:hover {
+    border-bottom: 1px solid black;
+}
+
+header .header-main .block ul li a {
+    color: black;
+    cursor: pointer;
+}
+
+header .header-bottom {
+    padding-left: 100px;
+    padding-top: 25px;
+    display: flex;
+}
+
+header .header-bottom .search form {
+    display: flex;
+}
+
+header .header-bottom .search form input {
+    width: 740px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    background-color: #F6F6F6;
+}
+
+header .header-bottom .search form button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 810px;
+    top: 145px;
+    transition: 0.2s ease-in-out;
+}
+
+header .header-bottom .search form button:hover {
+    transform: scale(1.1);
+}
+
+header .header-bottom .cart-account {
+    padding-left: 350px;
+    padding-top: 15px;
+}
+
+header .header-bottom .cart-account img {
+    margin-right: 80px;
+    transition: 0.2s ease-in-out;
+}
+
+header .header-bottom .cart-account img:hover {
+    transform: translateY(-5px);
+}
