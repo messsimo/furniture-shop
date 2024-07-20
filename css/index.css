@@ -75,3 +75,363 @@ a {
 .hero .block .balls .ball.active {
     opacity: 1;
 }
+
+
+/* Стили для секции с Специальными Предложениями */
+.special-items {
+    padding: 50px 70px;
+}
+
+.special-items h1 { 
+    font-size: 32px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.special-items .container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.special-items .container .block {
+    background-color: #F6F6F6;
+    padding: 25px 20px;
+    max-width: 260px;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+
+}
+
+.special-items .container .block .rating {
+    color: #FF862F;
+    padding-bottom: 35px;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+.special-items .container .block .rating img {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.special-items .container .block .rating p {
+    margin-top: -2px;
+    font-size: 16px;
+    color:#FF862F;
+}
+
+.special-items .container .block .photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.special-items .container .block .name {
+    font-size: 24px;
+    font-weight: 300;
+    width: 85%;
+    padding-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 35px;
+}
+
+.special-items .container .block button {
+    border: none;
+    background-color: transparent;
+    border: 2px solid #A65CF0;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    color: #A65CF0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.special-items .container .block button a {
+    color: #A65CF0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.special-items .container .block button:hover {
+    background-color: #A65CF0;
+}
+
+.special-items .container .block button a:hover {
+    color: white;
+}
+
+.special-items .container .block span {
+    margin-left: 10px;
+    color: #6666;
+}
+
+
+/* Стили для секции товаров с Высоким Рейтингом */
+.high-rating {
+    padding: 50px 70px;
+}
+
+.high-rating h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.high-rating .container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.high-rating .container .block {
+    background-color: #F6F6F6;
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    max-width: 260px;
+    max-height: 420px;
+}
+
+.high-rating .container .block .rating {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.high-rating .container .block .rating img {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.high-rating .container .block .rating p {
+    color:#FF862F;
+    margin-top: -2px;
+}
+
+.high-rating .container .block .photo-item {
+    max-width: 262px;
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.high-rating .container .block .name {
+    font-size: 24px;
+    font-weight: 300;
+    width: 232px;
+    padding-top: 15px;
+    margin-left: 10px;
+    padding-bottom: 35px;
+}
+
+.high-rating .container .block span {
+    margin-left: 10px;
+    color: #6666;
+}
+
+.high-rating .container .block button {
+    border: none;
+    background-color: transparent;
+    border: 2px solid #A65CF0;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    color: #A65CF0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.high-rating .container .block button:hover {
+    background-color: #A65CF0;
+    color: white;
+}
+
+.high-rating .btn {
+    padding: 15px 30px;
+    background-color: #A65CF0;
+    border: none;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.high-rating .btn a {
+    color: white;
+}
+
+.high-rating .btn:hover {
+    background-color: #7033AC;
+}
+
+
+/* Стили для промежуточной секции */
+.template {
+    background-image: url("/images/temp-bg.jpg") ;
+    max-width: 100%;
+    min-height: 600px;
+    margin-top: 30px;
+}
+
+.template .container {
+    padding-left: 150px;
+    padding-top: 150px;
+    width: 508px;
+}
+
+.template .container h1 {
+    font-family: "Playfair Display", serif;
+    color: #D5B986;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.template .container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.template .container button {
+    width: 187px;
+    height: 60px;
+    background-color: #A65CF0;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.template .container button:hover {
+    background-color: #7033AC;
+}
+
+.template .container button a {
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+
+/* Cтили для секции с Категорями */
+.category {
+    padding: 50px 70px;
+}
+
+.category h1 {
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.category .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category .container .block-1 {
+    margin-right: 40px;
+}
+
+.category .container .block-1,
+.category .container .block-2  {
+    width: 624px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.category .container .block-3,
+.category .container .block-4 {
+    margin-right: 40px;
+}
+
+.category .container .block-3,
+.category .container .block-4,
+.category .container .block-5 {
+    width: 405px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+
+.category .container .block-1 .cat span,
+.category .container .block-2 .cat span,
+.category .container .block-3 .cat span,
+.category .container .block-4 .cat span,
+.category .container .block-5 .cat span {
+    color: grey;
+    margin-right: 25px;
+
+}
+
+.category .container .block-1 .cat,
+.category .container .block-2 .cat,
+.category .container .block-3 .cat,
+.category .container .block-4 .cat,
+.category .container .block-5 .cat {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.category .container .block-1 h3,
+.category .container .block-2 h3,
+.category .container .block-3 h3,
+.category .container .block-4 h3,
+.category .container .block-5 h3 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+
+.category .container .block-1 .nav,
+.category .container .block-2 .nav,
+.category .container .block-3 .nav,
+.category .container .block-4 .nav,
+.category .container .block-5 .nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+.category .container .block-1 .nav a,
+.category .container .block-2 .nav a,
+.category .container .block-3 .nav a,
+.category .container .block-4 .nav a,
+.category .container .block-5 .nav a {
+    color: #A65CF0;
+}
+
+.category .container .block-1 .nav img,
+.category .container .block-2 .nav img,
+.category .container .block-3 .nav img,
+.category .container .block-4 .nav img,
+.category .container .block-5 .nav img {
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
