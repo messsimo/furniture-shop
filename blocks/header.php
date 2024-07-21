@@ -31,7 +31,7 @@
         </div>
 
         <div class="header-main">
-            <img src="images/logo.png">
+            <a href="/index.php"><img src="images/logo.png"></a>
 
             <div class="block">
                 <ul>

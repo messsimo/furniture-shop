@@ -108,3 +108,43 @@ button {
     align-items: center;
     margin: 0 auto;
 }
+
+.item-info .item-info-bottom {
+    padding-top: 50px;
+}
+
+.item-info .item-info-bottom .description {
+    width: 625px;
+}
+
+.item-info .item-info-bottom .description h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.item-info .item-info-bottom .description span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.item-info .item-info-bottom .description img {
+    padding-top: 50px;
+}
+
+.item-info .item-info-bottom .desc-table {
+    float: right;
+    width: 545px;
+    text-align: left;
+}
+
+.item-info .item-info-bottom .desc-table table tbody tr th {
+    padding-right: 150px;
+    padding-bottom: 3px;
+}
+
+.item-info .item-info-bottom .desc-table table tbody tr th,
+.item-info .item-info-bottom .desc-table table tbody tr td {
+    color: grey;
+    font-size: 14px;
+}

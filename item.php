@@ -40,7 +40,6 @@
             <button>Купить в один клик</button><br>  
 
             <a href="">+ Добавить в корзину</a>
-
         </div>
 
         <div class="item-photo">
@@ -48,7 +47,51 @@
         </div>
     </div>
 
+    <div class="item-info-bottom">
+        <div class="desc-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Категория</th>
+                        <td><?php echo $item["category"]; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Артикул</th>
+                        <td><?php echo $item["article"]; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Цвет</th>
+                        <td><?php echo $item["color"]; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Ширина</th>
+                        <td><?php echo $item["width"]; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Высота</th>
+                        <td><?php echo $item["height"]; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Глбина</th>
+                        <td><?php echo $item["deep"]; ?></td>
+                    </tr>
+                    <tr>
+                        <th>Мест</th>
+                        <td><?php echo $item["places"]; ?></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+
+        <div class="description">
+            <h1>Описание</h1>
+
+            <span><?php echo $item["description"]; ?></span>
+
+            <img src="images/img-desc.png">
+        </div>
+    </div>
     
 </div>
 
