@@ -1,4 +1,7 @@
 <?php
+    // Запуск сессии
+    session_start();
+
     // Подключение БД
     require("data/db.php");
 
@@ -21,10 +24,10 @@
 <!-- Секция Hero -->
 <div class="hero">
     <div class="block">
-        <img src="images/hero1.jpg" id="image">
+        <img src="images/hero1.jpg" id="image" alt="Фото">
 
         <div class="text">
-            <p id="text">Скидка 15% на первую покупку</p>
+            <p id="text" class="hero-text">Скидка 15% на первую покупку</p>
             <button><a href="">Получить!</a></button>
         </div>
 
@@ -50,7 +53,7 @@
             <div class="name"><?php echo $el["name"]; ?></div>
             <span><?php echo $el["price"]; ?>руб</span><br>
 
-            <button><a href="/item.php?id=<?php echo $el["id"]; ?>">Купить</a></button>
+            <a href="/item.php?id=<?php echo $el["id"]; ?>"><button>Купить</button></a>
         </div>
         <?php } ?>
     </div>
@@ -76,7 +79,7 @@
         <?php } ?>
     </div>
 
-    <button class="btn"><a href="/catalog.php">Смотреть больше товаров</a></button>
+    <a href="/catalog.php"><button class="btn">Смотреть больше товаров</button></a>
 </div>
 
 <!-- Промежуточная секция -->
@@ -84,7 +87,7 @@
     <div class="container">
         <h1>Оксфорд 1950</h1>
         <h2>Новая коллекция изысканных кресел</h2>
-        <button><a href="">Ознакомиться</a></button>
+        <a href=""><button>Ознакомиться</button></a>
     </div>
 </div>
 
@@ -183,6 +186,55 @@
                 </a>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- Секция с Полезной Информацией -->
+<div class="usefull">
+    <div class="buttons">
+        <img src="images/btn-left.png" id="btn-left">
+        <img src="images/btn-right.png" id="btn-right">
+    </div>
+
+    <h1>Полезное</h1>
+
+    <div class="container">
+            <div class="block-1">
+                <img src="images/usefull1.png" id="img-1" class="block-img">
+                <p id="text-1" class="block-text">И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?</p>
+                <a href=""><button>Читать</button></a>
+            </div>
+
+            <div class="block-2">
+                <img src="images/usefull2.png" id="img-2" class="block-img">
+                <p id="text-2" class="block-text">Как принято считать, некоторые особенности приносят несомненную пользу обществу?</p>
+                <a href=""><button>Читать</button></a>
+            </div>
+    </div>
+</div>
+
+<!-- Cекция с Связью с клиентов -->
+<div class="connection">
+    <div class="img">
+        <img src="images/deco.png" alt="SidDownPls">
+    </div>
+
+    <div class="processing">
+        <h1>Мы всегда вам рады!</h1>
+        <p>Безусловно, новая модель организационной деятельности в значительной степени обуславливает важность распределения внутренних резервов и ресурсов.</p>
+
+        <form action="data/connection.php" method="POST">
+            <input type="text" placeholder="Как вас зовут?" name="name"><br>
+            <input type="text" placeholder="Ваш телефон" name="phone"><br>
+            <input type="text" placeholder="Ваш e-mail" name="email" class="last"><br>
+
+            <span class="alert"><?= $_SESSION["alert"] ?? ''?></span><br>
+
+            <button type="submit">Отправить</button><br>
+
+            <input type="checkbox" id="checkbox" class="check">
+            <label for="checkbox">Принимаю <u>пользовательское соглашение</u></label>
+        </form>
     </div>
 </div>
 

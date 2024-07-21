@@ -1,0 +1,82 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #EAEAEA;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .principal {
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+footer .principal .icons {
+    padding-top: 30px;
+}
+
+footer div div.icons a {
+    margin-right: 15px;
+}
+
+footer div div.icons img:hover {
+    transform: translateY(-5px);
+}
+
+footer div div.icons a img {
+    width: 32px;
+    height: 32px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .container {
+    display: flex;
+    float: right;
+    padding-right: 70px;
+    padding-top: 50px;
+}
+
+footer .container .block {
+    margin-right: 100px;
+}
+
+footer .container .block h3 {
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+footer .container .block a {
+    color: grey;
+    transition: 0.2s ease-in-out;
+}
+
+footer .container .block a:hover {
+    color: black;
+}
+
+footer .container .block a p {
+    margin-bottom: 3px;
+}

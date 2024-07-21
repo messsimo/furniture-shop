@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* Стили для секции Hero */
 .hero {
     padding-top: 30px;
@@ -156,18 +160,8 @@ a {
     font-size: 16px;
 }
 
-.special-items .container .block button a {
-    color: #A65CF0;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-}
-
 .special-items .container .block button:hover {
     background-color: #A65CF0;
-}
-
-.special-items .container .block button a:hover {
     color: white;
 }
 
@@ -265,7 +259,7 @@ a {
     color: white;
 }
 
-.high-rating .btn {
+.high-rating a .btn {
     padding: 15px 30px;
     background-color: #A65CF0;
     border: none;
@@ -275,10 +269,9 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-}
-
-.high-rating .btn a {
     color: white;
+    font-size: 16px;
+    margin-top: 25px;
 }
 
 .high-rating .btn:hover {
@@ -314,24 +307,21 @@ a {
     padding-bottom: 100px;
 }
 
-.template .container button {
+.template .container a button {
     width: 187px;
     height: 60px;
     background-color: #A65CF0;
     border: none;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-}
-
-.template .container button:hover {
-    background-color: #7033AC;
-}
-
-.template .container button a {
     color: white;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+}
+
+.template .container button:hover {
+    background-color: #7033AC;
 }
 
 
@@ -434,4 +424,145 @@ a {
     height: 22px;
     margin-left: 3px;
     vertical-align: middle;
+}
+
+
+/* Стили для секции с Полезной Информацией */
+.usefull {
+    padding: 50px 70px;
+}
+
+.usefull h1 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.usefull .buttons {
+    float: right;
+    padding-right: 15px;
+}
+
+.usefull .buttons img {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.usefull .container {
+    display: flex;
+}
+
+.usefull .container .block-1,
+.usefull .container .block-2 {
+    min-width: 624px;
+    max-width: 624px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin-right: 45px;
+}
+
+.usefull .container .block-1 p,
+.usefull .container .block-2 p {
+    padding-top: 30px;
+    margin: 0 50px;
+    font-size: 24px;
+    font-weight: 300;
+    min-height: 100px;
+}
+
+.usefull .container .block-1 a button,
+.usefull .container .block-2 a button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    padding: 15px 35px;
+    border: 2px solid #A65CF0;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #A65CF0;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.usefull .container .block-1 a button:hover,
+.usefull .container .block-2 a button:hover {
+    background-color: #A65CF0;
+    color: white;
+}
+
+
+/* Стили для секции с Связью с клиентами */
+.connection {
+    padding: 50px 70px;
+}
+
+.connection .img {
+    float: right;
+}
+
+.connection .processing {
+    width: 624px;
+}
+
+.connection .processing h1 {
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.connection .processing p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.connection .processing form input:not(.check) {
+    width: 88%;
+    height: 54px;
+    padding-left: 15px;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 8px;
+    color: #999999;
+    font-size: 16px;
+    outline: none;
+}
+
+.connection .processing form input:not(.last) {
+    margin-bottom: 20px;
+}
+
+.connection .processing form button {
+    background-color: #A65CF0;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.connection .processing form button:hover {
+    background-color: #7033AC;
+}
+
+.connection .processing form label {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: -3px;
+}
+
+.connection .processing form label u {
+    color: #A65CF0;
+}
+
+.connection .processing form .alert {
+    font-size: 14px;
+    color: #333;
+    padding-left: 5px;
 }
