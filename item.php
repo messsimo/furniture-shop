@@ -5,13 +5,24 @@
     // Подключение БД
     require("data/db.php");
 
-    // Пременная с id из url($_GET)
-    $id = $_GET["id"];
+    // Пременная с id, name из url($_GET)
+    $id = $_GET["id"] ?? '';
+    $name = $_GET["name"] ?? '';
 
-    // Выборка из БД
-    $sql = "SELECT * FROM `items` WHERE `id` = :id";
+    if (isset($name)) {
+
+    }
+
+    // Выборка из БД по id
+    $sql = "SELECT * FROM `items` WHERE `id` = :id" ;
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['id' => $id]);
+    $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Выборка из БД по name
+    $sql = "SELECT * FROM `items` WHERE `name` = :name" ;
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['name' => $name]);
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Преоброзование массива

@@ -47,8 +47,8 @@
 
         <div class="header-bottom">
             <div class="search">
-                <form action="">
-                    <input type="text" placeholder="Я хочу купить..."><br>
+                <form action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Я хочу купить..." id="searchInput"><br>
                     <button><img src="/images/search.png" alt="Найти"></button>
                 </form>
             </div>
