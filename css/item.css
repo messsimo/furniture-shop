@@ -1,0 +1,110 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Стили для секции с Навигацией */
+.navigation {
+    padding: 50px 70px;
+}
+
+.navigation span {
+    font-size: 14px;
+    color: grey;
+}
+
+
+/* Стили для секции с Информацией о Товаре */
+.item-info {
+    padding: 50px 70px;
+}
+
+.item-info .item-info-top .info {
+    float: right;
+    padding-right: 70px;
+    text-align: left;
+    width: 480px;
+}
+
+.item-info .item-info-top .info .rating {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.item-info .item-info-top .info .rating img {
+    width: 16px;
+    height: 15px;
+    padding-right: 5px;
+}
+
+.item-info .item-info-top .info .rating p {
+    color: #FF862F;
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+.item-info .item-info-top h3 {
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.item-info .item-info-top h1 {
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+.item-info .item-info-top button {
+    background-color: #A65CF0;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.item-info .item-info-top button:hover {
+    background-color: #7033AC;
+}
+
+.item-info .item-info-top a {
+    color: #A65CF0;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.item-info .item-info-top a:hover {
+    color: #7033AC;
+}
+
+.item-info .item-photo img {
+    max-width: 624px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}

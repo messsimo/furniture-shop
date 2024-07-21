@@ -1,32 +1,31 @@
 // Массивы с фотографиями и текстом
-var images = ["/images/hero1.jpg", "/images/hero2.jpg"];
-var texts = ["Скидка 15% на первую покупку", "1000+ аксессуаров для дома"];
+var imagesSlider = ["/images/hero1.jpg", "/images/hero2.jpg"];
+var textsSlider = ["Скидка 15% на первую покупку", "1000+ аксессуаров для дома"];
 
 // Изначальный индекс слайдера
-var currentIndex = 0;
+var currentSliderIndex = 0;
 
 // Переменная с интервалом
-var interval = 4000;
+var sliderInterval = 4000;
 
 // Выборка
-var image = document.getElementById("image");
-var text = document.getElementById("text");
+var imageSlider = document.getElementById("image");
+var textSlider = document.getElementById("text");
 var dots = document.querySelectorAll(".ball");
 
 // Функция для работы слайдера
-function updateContent() {
-    currentIndex = (currentIndex + 1) % images.length;
+function updateSliderContent() {
+    currentSliderIndex = (currentSliderIndex + 1) % imagesSlider.length;
 
-    image.src = images[currentIndex];
-    text.textContent = texts[currentIndex];
+    imageSlider.src = imagesSlider[currentSliderIndex];
+    textSlider.textContent = textsSlider[currentSliderIndex];
 
     // Удаление класса .active у всех точек
     dots.forEach(dot => dot.classList.remove("active"));
 
     // Добавление класса .active к текущей точке
-    dots[currentIndex].classList.add("active");
+    dots[currentSliderIndex].classList.add("active");
 }
 
 // Установка интервала
-// setInterval вызывает updateContent через заданный интервал времени
-setInterval(updateContent, interval);
+setInterval(updateSliderContent, sliderInterval);
