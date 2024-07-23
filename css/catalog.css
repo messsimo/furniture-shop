@@ -1,0 +1,212 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Стили для секции с Навигацией */
+.nav-catalog {
+    padding: 50px 100px 0;
+}
+
+.nav-catalog span {
+    color: grey;
+}
+
+
+/* Стили для секции с Фильтрами */
+.filters {
+    width: 300px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.filters h1 {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.filters .conteiner-filters {
+    min-width: 300px;
+}
+
+.filters .conteiner-filters .block {
+    padding-bottom: 20px;
+}
+
+.filters .conteiner-filters .block p {
+    color: #666666;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.filters .conteiner-filters .block form input {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.filters .conteiner-filters .block form label {
+    font-size: 16px;
+    color: #666666;
+}
+
+.filters .conteiner-filters .oxford {
+    max-width: 280px;
+    background-color: #333333;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+
+.filters .conteiner-filters .oxford .text-card p {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    color: #D5B986;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+.filters .conteiner-filters .oxford .text-card span {
+    color: #999999;
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.filters .conteiner-filters .oxford .nav-сard {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+}
+
+.filters .conteiner-filters .oxford .nav-сard a {
+    color: #A65CF0;
+}
+
+.filters .conteiner-filters .oxford .nav-сard img {
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+
+.filters .container-products {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1000px;
+}
+
+.filters .container-products .block {
+    background-color: #F6F6F6;
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    max-width: 260px;
+}
+
+.filters .container-products  .block .rating-catalog {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.filters .container-products  .block .rating-catalog img {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.filters .container-products  .block .rating-catalog p {
+    color:#FF862F;
+    margin-top: -3px;
+}
+
+.filters .container-products .block .photo-item {
+    max-width: 262px;
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.filters .container-products .block .name-catalog {
+    font-size: 24px;
+    font-weight: 300;
+    width: 232px;
+    padding-top: 15px;
+    margin-left: 10px;
+    padding-bottom: 35px;
+}
+
+.filters .container-products .block span {
+    margin-left: 10px;
+    color: #6666;
+}
+
+.filters .container-products .block button {
+    border: none;
+    background-color: transparent;
+    border: 2px solid #A65CF0;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    color: #A65CF0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.filters .container-products .block button:hover {
+    background-color: #A65CF0;
+    color: white;
+}
+
+.filters .container-products .btn {
+    padding: 15px 30px;
+    background-color: #A65CF0;
+    border: none;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.filters .container-products .btn:hover {
+    background-color: #7033AC;
+}

@@ -53,7 +53,7 @@
             <div class="name"><?php echo $el["name"]; ?></div>
             <span><?php echo $el["price"]; ?>руб</span><br>
 
-            <a href="/item.php?id=<?php echo $el["id"]; ?>"><button>Купить</button></a>
+            <a href="/item.php?id=<?php echo $el["id"]; ?>?name=<?php echo $el["name"]; ?>"><button>Купить</button></a>
         </div>
         <?php } ?>
     </div>
@@ -74,7 +74,7 @@
                 <div class="name"><?php echo $el["name"]; ?></div>
                 <span><?php echo $el["price"]; ?> руб</span><br>
 
-                <a href="/item.php?id=<?php echo $el["id"]; ?>"><button>Купить</button></a>
+                <a href="/item.php?id=<?php echo $el["id"]; ?>?name=<?php echo $el["name"]; ?>"><button>Купить</button></a>
         </div>
         <?php } ?>
     </div>

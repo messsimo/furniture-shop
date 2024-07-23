@@ -45,5 +45,8 @@
 <!-- Подключение горизонтального скролла для блока с Полезной Информацией-->
 <script src="/scripts/usefull-slider.js"></script>
 
+<!-- Подключение cкрипта для поиска товара -->
+<script src="/scripts/search.js"></script>
+
 </body>
 </html>

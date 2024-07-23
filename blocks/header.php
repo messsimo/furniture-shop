@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/item.css">
+    <link rel="stylesheet" href="/css/catalog.css">
     <title>SitDownPls</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
 
             <div class="block">
                 <ul>
-                    <li><a href="">Каталог</a></li>
+                    <li><a href="/catalog.php">Каталог</a></li>
                     <li><a href="">Магазины</a></li>
                     <li><a href="">Шоу-рум</a></li>
                     <li><a href="">Доставка и оплата</a></li>
@@ -47,8 +48,8 @@
 
         <div class="header-bottom">
             <div class="search">
-                <form action="">
-                    <input type="text" placeholder="Я хочу купить..."><br>
+                <form action="" method="GET" id="searchForm">
+                    <input type="text" placeholder="Я хочу купить..." id="searchInput"><br>
                     <button><img src="/images/search.png" alt="Найти"></button>
                 </form>
             </div>
