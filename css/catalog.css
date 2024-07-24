@@ -61,6 +61,7 @@ button {
     padding-bottom: 10px;
 }
 
+
 .filters .conteiner-filters .block form input {
     width: 15px;
     height: 15px;
@@ -120,6 +121,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     min-width: 1000px;
+    max-width: 1000px;
 }
 
 .filters .container-products .block {
@@ -129,6 +131,7 @@ button {
     margin-right: 25px;
     margin-bottom: 25px;
     max-width: 260px;
+    min-width: 260px;
 }
 
 .filters .container-products  .block .rating-catalog {
@@ -207,6 +210,39 @@ button {
     margin-top: 25px;
 }
 
+.filters .container-products-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .filters .container-products .btn:hover {
     background-color: #7033AC;
+}
+
+.filters .pagination {  
+    display: flex;
+    justify-content: center;
+    margin-top: auto; 
+    margin-right: 30px;
+}
+
+.filters .pagination a {
+    border: 1px solid #A65CF0;
+    padding: 8px 15px;
+    margin-right: 10px;
+    color: #A65CF0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.filters .pagination a:hover {
+    background-color: #7033AC;
+    color: white;
+}
+
+.filters .pagination a.active {
+    background-color: #7033AC;
+    color: white;
 }

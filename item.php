@@ -9,28 +9,13 @@
     $id = $_GET["id"] ?? '';
     $name = $_GET["name"] ?? '';
 
-<<<<<<< HEAD
-    if (isset($name)) {
-
-    }
-
-    // Выборка из БД по id
-    $sql = "SELECT * FROM `items` WHERE `id` = :id" ;
-=======
     // Выборка из БД по id
     $sql = "SELECT * FROM `items` WHERE (`id` = :id OR `name` = :name)";
->>>>>>> dev
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
         ':id' => $id, 
         ':name' => $name
     ]);
-    $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    // Выборка из БД по name
-    $sql = "SELECT * FROM `items` WHERE `name` = :name" ;
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute(['name' => $name]);
     $item = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Преоброзование массива

@@ -15,8 +15,29 @@
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $category = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
 
+    // Общее кол-во записей в БД
+    $totalItems = count($items);
+    // Кол-во записей на страницу
+    $itemsPerPage = 9;
+    // Кол-во страниц для записей
+    $totalPages = ceil($totalItems / $itemsPerPage);
+    // Определниен номера текущей старницы
+    if (empty($_GET["page"])) {
+        $currentPage = 1;
+    } else {
+        $currentPage = intval($_GET["page"]);
+    }
+    // С какой записи начинаеться вывод 
+    $offset = ($currentPage - 1) * $itemsPerPage; 
+
+    // Выборк из БД для вывода записей 
+    $sql = "SELECT * FROM `items` LIMIT ?, ?";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(1, (int)$offset, PDO::PARAM_INT);
+    $stmt->bindValue(2, (int)$itemsPerPage, PDO::PARAM_INT);
+    $stmt->execute();
+    $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!-- Cекция с Навигацией -->
@@ -30,7 +51,7 @@
         <h1>Фильтровать по:</h1>
         <div class="block">
             <p>Категория</p>
-            <form action="" method="GET">
+            <form action="" method="GET" id="filterForm">
                 <?php foreach ($category as $el) { ?>
                     <input type="checkbox" id="input-category">
                     <label for="input-category"><?php echo $el["name"]; ?></label><br>
@@ -40,7 +61,7 @@
 
         <div class="block">
             <p>Цвет</p>
-           <form action="" method="GET">
+           <form action="" method="GET" id="filterForm">
                <?php foreach ($items as $el) { ?>
                     <input type="checkbox" id="input-color">
                     <label for="input-color"><?php echo $el["color"]; ?></label><br>
@@ -64,6 +85,7 @@
         </div>
     </div> 
     
+    <div class="container-products-main">
     <div class="container-products">
         <?php foreach ($items as $el) { ?>
             <div class="block">
@@ -79,6 +101,17 @@
                 <a href="/item.php?id=<?php echo $el["id"]; ?>?name=<?php echo $el["name"]; ?>"><button>Купить</button></a>
             </div>
         <?php } ?>
+    </div>
+
+    <div class="pagination">
+        <?php for ($el = 1; $el <= $totalPages; $el++) { 
+            if ($currentPage == $el) {
+                echo "<a href='/catalog.php?page=$el' class='active'>$el</a>";
+            } else {
+                echo "<a href='/catalog.php?page=$el'>$el</a>";
+            }
+        } ?>
+    </div>
     </div>
 </div>
 
