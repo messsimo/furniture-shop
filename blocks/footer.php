@@ -48,5 +48,8 @@
 <!-- Подключение cкрипта для поиска товара -->
 <script src="/scripts/search.js"></script>
 
+<!-- Подключение cкрипта для фильтрации товара -->
+<script src="/scripts/filter.js"></script>
+
 </body>
 </html>

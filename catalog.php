@@ -38,6 +38,35 @@
     $stmt->bindValue(2, (int)$itemsPerPage, PDO::PARAM_INT);
     $stmt->execute();
     $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Переменная с значениями GET
+    $categoryGet = $_GET["category"] ?? '';
+    $colorGet = $_GET["color"] ?? '';
+    $page = $_GET["page"] ?? 1;
+
+    // Базовый url для пагинации с фильтрами
+    $baseurl = '/catalog.php?' . http_build_query([
+    'category' => $categoryGet,
+    'color' => $colorGet,
+    ]);
+
+    if($categoryGet) {
+        $sql = "SELECT * FROM `items` WHERE `category` = :category LIMIT :offset, :itemsPerPage";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindValue(':category', $categoryGet, PDO::PARAM_STR);
+        $stmt->bindValue(':offset', (int)$offset, PDO::PARAM_INT);
+        $stmt->bindValue(':itemsPerPage', (int)$itemsPerPage, PDO::PARAM_INT);
+        $stmt->execute();
+        $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } else if ($colorGet) {
+        $sql = "SELECT * FROM `items` WHERE `color` = :color LIMIT :offset, :itemsPerPage";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindValue(':color', $colorGet, PDO::PARAM_STR);
+        $stmt->bindValue(':offset', (int)$offset, PDO::PARAM_INT);
+        $stmt->bindValue(':itemsPerPage', (int)$itemsPerPage, PDO::PARAM_INT);
+        $stmt->execute();
+        $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 ?>
 
 <!-- Cекция с Навигацией -->
@@ -51,22 +80,22 @@
         <h1>Фильтровать по:</h1>
         <div class="block">
             <p>Категория</p>
-            <form action="" method="GET" id="filterForm">
+            <form action="" method="GET">
                 <?php foreach ($category as $el) { ?>
-                    <input type="checkbox" id="input-category">
-                    <label for="input-category"><?php echo $el["name"]; ?></label><br>
+                    <input type="checkbox" id="input-category-<?php echo $el["id"]; ?>" class="checkbox" data-url="/catalog.php?category=<?php echo $el["name"]; ?>">
+                    <label for="input-category-<?php echo $el["id"]; ?>"><?php echo $el["name"]; ?></label><br>
                 <?php } ?>
             </form>
         </div>
 
         <div class="block">
             <p>Цвет</p>
-           <form action="" method="GET" id="filterForm">
+            <form action="" method="GET">
                <?php foreach ($items as $el) { ?>
-                    <input type="checkbox" id="input-color">
+                    <input type="checkbox" id="input-color-<?php echo $el["id"]; ?>" class="checkbox" data-url="/catalog.php?color=<?php echo $el["color"]; ?>">
                     <label for="input-color"><?php echo $el["color"]; ?></label><br>
                 <?php } ?>
-          </form>
+            </form>
         </div>
 
         <div class="oxford">
@@ -104,11 +133,12 @@
     </div>
 
     <div class="pagination">
-        <?php for ($el = 1; $el <= $totalPages; $el++) { 
+        <?php for ($el = 1; $el <= $totalPages; $el++) {
+            $url = $baseurl . '&page=' . $el;
             if ($currentPage == $el) {
-                echo "<a href='/catalog.php?page=$el' class='active'>$el</a>";
+                echo "<a href='$url' class='active'>$el</a>";
             } else {
-                echo "<a href='/catalog.php?page=$el'>$el</a>";
+                echo "<a href='$url'>$el</a>";
             }
         } ?>
     </div>
