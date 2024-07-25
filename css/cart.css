@@ -1,0 +1,113 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Стили для секции с навигацией */
+.nav-cart h1 {
+    padding: 50px 100px;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+/* Cтили для секции с Отображением Товара */
+.cart-items {
+    padding: 50px 100px;
+    display: flex;
+}
+
+.cart-items .container-totalItems {
+    width: 80%;
+}
+
+.cart-items .container-totalItems table {
+    width: 77%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.cart-items .container-totalItems table th {
+    /* background-color: #F6F6F6; */
+    text-align: center;
+    padding: 10px;
+    width: 5%;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-items .container-totalItems table td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.cart-items .container-totalItems table tr:last-child td {
+    border-bottom: none;
+}
+
+.cart-items .container-shopping {
+    width: 20%;
+}
+
+.cart-items .container-shopping .shop {
+    background-color: #f6f6f6;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.cart-items .container-shopping .shop p {
+    font-weight: 300;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.cart-items .container-shopping .shop span {
+    font-size: 16px;
+}
+
+.cart-items .container-shopping .shop a button {
+    margin-top: 50px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #A65CF0;
+    color: #A65CF0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-items .container-shopping .shop a button:hover {
+    background-color: #A65CF0;
+    color: white;
+}
