@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/reg_sign.css">
     <title>SitDownPls</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
             </div>
 
             <div class="cart-account">
-                <a href="/account.php"><img src="/images/account.png" alt="Аккаунт"></a>
+                <a href="/reg_sign.php"><img src="/images/account.png" alt="Аккаунт"></a>
                 <a href="/cart.php"><img src="/images/cart.png" alt="Корзина"></a>
             </div>
         </div>
