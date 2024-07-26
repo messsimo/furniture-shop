@@ -1,0 +1,90 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Стили для формы отправки данных */
+.cart-items .container-checkout {
+    padding-top: 150px;
+}
+
+.cart-items .container-checkout h1 {
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.cart-items .container-checkout form {
+    width: 50%;
+}
+
+.cart-items .container-checkout form label {
+    color: grey;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cart-items .container-checkout form input {
+    width: 70%;
+    padding: 10px 10px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #A65CF0;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: #f6f6f6;
+}
+
+.cart-items .container-checkout form .alert {
+    color: grey;
+    font-size: 14px;
+}
+
+.cart-items .container-checkout form button {
+    margin-top: 5px;
+    padding: 10px 45px;
+    background-color: #A65CF0;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-items .container-checkout form button:hover {
+    background-color: #7033AC;
+}
+
+.cart-items .container-checkout .price {
+    float: right;
+    margin-right: 100px;
+    background-color: #EAEAEA;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.cart-items .container-checkout .price span {
+    font-weight: 350;
+    font-size: 28px;
+}

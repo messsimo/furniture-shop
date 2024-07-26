@@ -1,4 +1,7 @@
 <?php
+    // Запуск сессии 
+    session_start();
+
     // Подключение шапки сайта
     require_once("blocks/header.php");
 
@@ -39,11 +42,11 @@
             </div>
 
             <h3><?php echo $item["name"]; ?></h3>
-            <h1><?php echo $item["price"]; ?> руб</h1>
+            <h1><?php echo number_format($item["price"]); ?> руб</h1>
 
             <button>Купить в один клик</button><br>  
 
-            <a href="">+ Добавить в корзину</a>
+            <a href="/cart.php?id=<?php echo $item["id"]; ?>&quantity=1">+ Добавить в корзину</a>
         </div>
 
         <div class="item-photo">

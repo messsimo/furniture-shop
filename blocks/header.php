@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/item.css">
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/checkout.css">
     <title>SitDownPls</title>
 </head>
 <body>

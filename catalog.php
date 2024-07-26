@@ -125,7 +125,7 @@
 
                 <img src="cover-items/<?php echo $el["photo"]; ?>" class="photo-item">
                 <div class="name-catalog"><?php echo $el["name"]; ?></div>
-                <span><?php echo $el["price"]; ?> руб</span><br>
+                <span><?php echo number_format($el["price"]); ?> руб</span><br>
 
                 <a href="/item.php?id=<?php echo $el["id"]; ?>?name=<?php echo $el["name"]; ?>"><button>Купить</button></a>
             </div>
