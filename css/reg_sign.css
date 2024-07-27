@@ -23,9 +23,9 @@ button {
 
 /* Стили для секции с формами */
 .container-form {
-    padding: 50px 100px;
-    display: flex;
-    justify-content: space-between;
+    padding: 100px 100px;
+    display: grid;
+    place-items: center;
 }
 
 .container-form .container--reg-form {
@@ -88,9 +88,36 @@ button {
     font-weight: 400;
     font-size: 16px;
     transition: 0.3s ease-in-out;
+    width: 100%;
 }
 
 .container-form .container--reg-form form button:hover,
 .container-form .container--signin-form form button:hover {
     background-color: #7033AC;
+}
+
+.container-form .container--signin-form form .link,
+.container-form .container--reg-form form .link {
+    display: grid;
+    place-items: center;
+    padding-top: 30px;
+}
+
+.container-form .container--signin-form form .link span,
+.container-form .container--reg-form form .link span {
+    font-size: 16px;
+}
+
+.container-form .container--signin-form form .link a,
+.container-form .container--reg-form form .link a {
+    margin-top: -17px;
+    font-size: 16px;
+    border-bottom: 1px solid #A65CF0;
+    color:#A65CF0;
+    transition: 0.2s ease-in-out;
+}
+
+.container-form .container--signin-form form .link a:hover,
+.container-form .container--reg-form form .link a:hover {
+    color: #7033AC;
 }

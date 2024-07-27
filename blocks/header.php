@@ -58,7 +58,7 @@
             </div>
 
             <div class="cart-account">
-                <a href="/reg_sign.php"><img src="/images/account.png" alt="Аккаунт"></a>
+                <a href="/reg_sign.php?form=Вход"><img src="/images/account.png" alt="Аккаунт"></a>
                 <a href="/cart.php"><img src="/images/cart.png" alt="Корзина"></a>
             </div>
         </div>
