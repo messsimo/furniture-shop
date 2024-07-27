@@ -1,25 +1,31 @@
 <?php
     // Подключение шапки сайта
     require_once("blocks/header.php");
+
 ?>
 
 <!-- Секция с формами Регистрации и Входа -->
 <div class="container-form">
+    <?php
+        // Подключение сессий
+        session_start();
+    ?>
+
     <!-- Условия при котором будет показываться форма Регистрации -->
     <?php if (isset($_GET["form"]) && $_GET["form"] == "Регистрация") { ?>
     <div class="container--reg-form">
         <h1>Регистрация</h1>
         <form action="data/reg_post.php" method="POST">
-            <label for="usernmae">Ваше имя</label><br>
-            <input type="text" name="usernmae" id="usernmae"><br>
+            <label for="username">Ваше имя</label><br>
+            <input type="text" name="username" id="username"><br>
             <label for="email">Ваша почта</label><br>
-            <input type="text" name="email" id="email"><br>
+            <input type="email" name="email" id="email"><br>
             <label for="password">Ваш пароль</label><br>
-            <input type="text" name="password" id="password"><br>
+            <input type="password" name="password" id="password"><br>
             <label for="rePassword">Повтор пароля</label><br>
-            <input type="text" name="rePassword" id="rePassword"><br>
+            <input type="password" name="rePassword" id="rePassword"><br>
 
-            <span class="form-alert"></span><br>
+            <span class="form-alert"><?= $_SESSION["reg-alert"] ?? '' ?></span><br>
 
             <button type="submit">Зарегестрироватся</button>
 
@@ -37,11 +43,11 @@
         <h1>Вход в аккаунт</h1>
         <form action="data/signin_post.php" method="POST">
             <label for="email">Ваша почта</label><br>
-            <input type="text" name="email" id="email"><br>
+            <input type="email" name="email-signin" id="email"><br>
             <label for="password">Ваш пароль</label><br>
-            <input type="text" name="password" id="password"><br>
+            <input type="password" name="password-signin" id="password"><br>
 
-            <span class="form-alert"></span><br>
+            <span class="form-alert"><?= $_SESSION["signin-alert"] ?? '' ?></span><br>
 
             <button type="submit">Войти</button><br>
 
