@@ -37,6 +37,9 @@
             header("Location: /reg_sign.php?form=Вход");
         } else {
             header("Location: /account.php");
+
+            // Cессия с почтой пользователя
+            $_SESSION["email-user"] = $email;
         }
     } else {
         $_SESSION["signin-alert"] = "Ваш логин или пароль не совпадает";

@@ -62,6 +62,6 @@
             "password" => $passwordHash
         ]);
 
-        // Переадрессация на страницу пользователя
-        header("Location: /account.php");
+        // Переадрессация на форму пользователя
+        header("Location: /reg_sign.php?form=Вход");
     }

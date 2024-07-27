@@ -110,7 +110,7 @@
                 <?php foreach ($_SESSION["cart"] as $el) { ?>
                     <tr>
                         <td><img src="cover-items/<?= $el['photo'] ?? '' ?>" alt="<?= $el['name'] ?? '' ?>"></td>
-                        <td><?= htmlspecialchars($el['name'] ?? '') ?></td>
+                        <td><?= $el['name'] ?? '' ?></td>
                         <td><?= number_format($el['price'] ?? '') ?></td>
                         <td>
                             <a class="quantity" href="/cart.php?action=add&id=<?= $el["id"] ?? '' ?>">+</a>

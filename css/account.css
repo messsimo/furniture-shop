@@ -1,0 +1,137 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Стили для Карточки Пользователя */
+.account {
+    padding: 50px 100px;
+}
+
+.account .card-decoration {
+    float: right;
+    width: 500px;
+}
+
+.account .user-card {
+    background-color: #EAEAEA;
+    width: 50%;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.account .user-card .user-avatar {
+    padding: 50px 40px;
+}
+
+.account .user-card .user-avatar img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 100px;
+}
+
+.account .user-card .user-info-card {
+    padding: 30px 10px;
+}
+
+.account .user-card .user-info-card h1 {
+    font-weight: 350;
+    padding-bottom: 20px;
+}
+
+.account .user-card .user-info-card p {
+    color: grey;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.account .user-card .user-info-card span {
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.account .user-card .user-info-card a {
+    background-color: red;
+    padding: 7px 90px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.account .user-card .user-info-card a:hover {
+    background-color: rgb(199, 26, 26);
+}
+
+/* Cтили для секции с Заказами Пользовтеля */
+.user-orders {
+    padding: 50px 100px;
+}
+
+.user-orders h1 {
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.user-orders .oreders-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.user-orders .oreders-container table th {
+        /* background-color: #F6F6F6; */
+        text-align: center;
+        padding: 10px;
+        width: 20%;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+}
+
+.user-orders .oreders-container table td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.user-orders .oreders-container table tr:last-child td {
+    border-bottom: none;
+}
+
+.order-alert {
+    color: grey;
+    font-size: 12px;
+    margin-top: 50px;
+    padding-left: 100px;
+}

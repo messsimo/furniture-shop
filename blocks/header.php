@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/checkout.css">
     <link rel="stylesheet" href="/css/reg_sign.css">
+    <link rel="stylesheet" href="/css/account.css">
     <title>SitDownPls</title>
 </head>
 <body>
