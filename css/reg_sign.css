@@ -72,7 +72,7 @@ button {
 
 .container-form .container--reg-form form .form-alert,
 .container-form .container--signin-form form .form-alert {
-    color: grey;
+    color: black;
     font-size: 14px;
 }
 

@@ -9,6 +9,16 @@
     $email = $_POST["email-signin"];
     $password = $_POST["password-signin"];
 
+    // Логин и пароль для админа
+    $adminLogin = "admin";
+    $adminPassword = "aDmin123";
+
+    // Проверка на админа
+    if ($email == $adminLogin && $password == $adminPassword) {
+        header("Location: /admin-panel/admin.php");
+        exit();
+    }
+
     // Валидация данных
     if (empty($email) || empty($password)) {
         $_SESSION["signin-alert"] = "Заполните все поля";

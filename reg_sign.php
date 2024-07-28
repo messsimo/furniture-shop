@@ -43,7 +43,7 @@
         <h1>Вход в аккаунт</h1>
         <form action="data/signin_post.php" method="POST">
             <label for="email">Ваша почта</label><br>
-            <input type="email" name="email-signin" id="email"><br>
+            <input type="text" name="email-signin" id="email"><br>
             <label for="password">Ваш пароль</label><br>
             <input type="password" name="password-signin" id="password"><br>
 

@@ -1,0 +1,78 @@
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Универсальные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+/* Стили дл я секции с Всеми товарами */
+.allItems {
+    padding: 100px 100px;
+}
+
+.allItems h1 {
+    font-weight: 350;
+    font-size: 38px;
+}
+
+.allItems .container-allItems {
+    padding-top: 100px;
+}
+
+.allItems .container-allItems table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.allItems .container-allItems table tr th {
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.allItems .container-allItems table tr td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.allItems .container-allItems table tr td img {
+    max-height: 100px;
+}
+
+.allItems .container-allItems table tr:last-child td {
+    border-bottom: none;
+}
+

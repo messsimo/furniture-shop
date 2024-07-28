@@ -73,7 +73,7 @@ button {
     padding-left: 10px;
 }
 
-.cart-items .container-totalItems table tr:last-child td {
+.cart-items .container-totalItems table tr:last-child  {
     border-bottom: none;
 }
 
