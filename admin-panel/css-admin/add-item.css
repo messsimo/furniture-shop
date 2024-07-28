@@ -27,10 +27,106 @@ button {
 
 /* Стили для секции Добавления Товара */
 .addItem {
-    padding: 100px;
+    padding: 70px 100px;
+    display: flex;
 }
 
-.addItem h1 {
+.addItem form h1 {
     font-size: 38px;
     font-weight: 350;
+    padding-bottom: 30px;
+}
+
+.addItem form {
+    margin-top: 30px;
+    width: 600px;
+    padding: 50px;
+}
+
+.addItem form label {
+    color: grey;
+    font-size: 16px;
+}
+
+.addItem form select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 20%;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 30px;
+    outline: none;
+}
+
+.addItem form input:not(.input-file),
+.addItem form textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #aeaeae;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.addItem form .input-file {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.addItem form .alert {
+    color: black;
+    font-size: 14px;
+}
+
+.addItem form button {
+    margin-top: 10px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.addItem form input:focus {
+    border: 2px solid #aeaeae;
+}
+
+.addItem form textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.addItem .rules-additems {
+    margin-top: 100px;
+    background-color: #f6f6f6;
+    max-height: 500px;
+    border-radius: 10px;
+    min-width: 500px;
+}
+
+.addItem .rules-additems p {
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 350;
+}
+
+.addItem .rules-additems .container-ruler {
+    margin-left: 30px;
+    width: 400px;
+}
+
+.addItem .rules-additems .container-ruler span {
+    margin-bottom: 5px;
+    font-weight: 350;
+    font-size: 14px;
 }

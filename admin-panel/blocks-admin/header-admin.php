@@ -17,12 +17,10 @@
                 <p>Работа с товаром</p>
                 <a href="/admin-panel/add_item.php">Добавить товар</a>
                 <a href="/admin-panel/edit.php">Редактировать товар</a>
-                <a href="/admin-panel/delete.php">Удалить товар</a>
 
                 <p>Работа с категориями</p>
                 <a href="/admin-panel/add_category.php">Добавить категорию</a>
                 <a href="/admin-panel/edit_category.php">Редактировать категорию</a>
-                <a href="/admin-panel/delete_category.php">Удалить категорию</a>
 
                 <p>Работа с магазином</p>
                 <a href="/admin-panel/admin.php">Все товары</a>
