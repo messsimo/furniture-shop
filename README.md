@@ -61,8 +61,8 @@ SitDownPls is an interactive CRUD application that integrates with an API for pa
   <img src="readme_images/readme19.png" alt="Скриншот 19" width="200"/>
   <img src="readme_images/readme20.png" alt="Скриншот 20" width="200"/>
   <img src="readme_images/readme21.png" alt="Скриншот 21" width="200"/>
-  <img src="readme_images/readme22.png" alt="Скриншот 22" width="200"/>
   <img src="readme_images/readme23.png" alt="Скриншот 23" width="200"/>
   <img src="readme_images/readme24.png" alt="Скриншот 24" width="200"/>
   <img src="readme_images/readme25.png" alt="Скриншот 25" width="200"/>
+  <img src="readme_images/readme22.png" alt="Скриншот 22" width="200"/>
 </p>
