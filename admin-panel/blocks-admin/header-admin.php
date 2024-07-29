@@ -24,7 +24,7 @@
                 <a href="/admin-panel/edit_category.php">Редактировать категорию</a>
 
                 <p>Работа с магазином</p>
-                <a href="/admin-panel/oreders.php">Заказы</a>
+                <a href="/admin-panel/admin.php">Заказы</a>
                 <a href="/admin-panel/questions.php">Вопросы пользователей</a>
             </div>
         </div>

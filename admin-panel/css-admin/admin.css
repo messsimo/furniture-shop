@@ -26,20 +26,20 @@ button {
 }
 
 /* Стили дл я секции с Всеми товарами */
-.orders {
+.universal {
     padding: 100px 100px;
 }
 
-.orders h1 {
+.universal h1 {
     font-weight: 350;
     font-size: 38px;
 }
 
-.orders .container-orders {
+.universal .container-universal {
     padding-top: 20px;
 }
 
-.orders .container-orders table {
+.universal .container-universal table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
@@ -47,19 +47,18 @@ button {
     background-color: white;
 }
 
-.orders .container-orders table tr th {
+.universal .container-universal table tr th {
     text-align: center;
     padding: 10px;
-    width: 15%;
+    width: 2%;
     font-size: 24px;
     font-weight: 300;
     text-align: left;
     padding: 10px 5px;
     border-bottom: 1px solid #ddd;
-    width: 1px;
 }
 
-.orders .container-orders table tr td {
+.universal .container-universal table tr td {
     text-align: left;
     border-bottom: 1px solid #ddd;;
     vertical-align: middle;
@@ -69,6 +68,6 @@ button {
     padding-left: 0px;
 }
 
-.orders .container-orders tr:last-child td {
+.universal .container-universal tr:last-child td {
     border-bottom: none;
 }
