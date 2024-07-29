@@ -26,20 +26,20 @@ button {
 }
 
 /* Стили дл я секции с Всеми товарами */
-.allItems {
+.orders {
     padding: 100px 100px;
 }
 
-.allItems h1 {
+.orders h1 {
     font-weight: 350;
     font-size: 38px;
 }
 
-.allItems .container-allItems {
-    padding-top: 100px;
+.orders .container-orders {
+    padding-top: 20px;
 }
 
-.allItems .container-allItems table {
+.orders .container-orders table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
@@ -47,32 +47,28 @@ button {
     background-color: white;
 }
 
-.allItems .container-allItems table tr th {
+.orders .container-orders table tr th {
     text-align: center;
     padding: 10px;
-    width: 20%;
+    width: 15%;
     font-size: 24px;
     font-weight: 300;
     text-align: left;
-    padding: 10px;
+    padding: 10px 5px;
     border-bottom: 1px solid #ddd;
+    width: 1px;
 }
 
-.allItems .container-allItems table tr td {
+.orders .container-orders table tr td {
     text-align: left;
     border-bottom: 1px solid #ddd;;
     vertical-align: middle;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 0px;
 }
 
-.allItems .container-allItems table tr td img {
-    max-height: 100px;
-}
-
-.allItems .container-allItems table tr:last-child td {
+.orders .container-orders tr:last-child td {
     border-bottom: none;
 }
-
