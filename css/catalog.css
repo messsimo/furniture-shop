@@ -154,6 +154,7 @@ button {
 .filters .container-products .block .photo-item {
     max-width: 262px;
     min-height: 125px;
+    max-height: 125px;
     display: flex;
     flex-direction: column;
     align-items: center;

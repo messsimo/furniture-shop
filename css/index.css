@@ -216,6 +216,7 @@ button {
 
 .high-rating .container .block .photo-item {
     max-width: 262px;
+    min-width: 262px;
     min-height: 125px;
     display: flex;
     flex-direction: column;

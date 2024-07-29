@@ -1,0 +1,116 @@
+/* Стили для секции с Редактированием/Удалением товара */
+.editItems {
+    padding: 100px 50px;
+}
+
+.editItems h1 {
+    padding-left: 50px;
+}
+
+.editItems P {
+    padding-left: 50px;
+    padding-top: 10px;
+    color: grey;
+}
+
+.editItems .container-editItems {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+}
+
+.editItems .container-editItems form {
+    margin-right: 50px;
+    width: 300px;
+    margin-bottom: 50px;
+    background-color: #dbdbdb;
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+.editItems .container-editItems form:last-child {
+    margin-right: 0;
+}
+
+.editItems .container-editItems form .img {
+    display: grid;
+    place-items: center;
+    padding-bottom: 20px;
+}
+
+.editItems .container-editItems form img {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+.editItems .container-editItems form label {
+    color: rgb(53, 53, 53);
+}
+
+.editItems .container-editItems form input:not(.input-file),
+.editItems .container-editItems form textarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    border: 1px solid #aeaeae;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.editItems .container-editItems form input:focus {
+    border: 2px solid #aeaeae;
+}
+
+.editItems .container-editItems form textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.editItems .container-editItems form .input-file {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.editItems .container-editItems form button {
+    margin-top: 10px;
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.editItems .container-editItems form .btn-remove {
+    background-color: red;
+    transition: 0.3s ease-in-out;
+}
+
+.editItems .container-editItems form .btn-remove:hover {
+    background-color: rgb(201, 25, 25);
+}
+
+.editItems .container-editItems form button:hover {
+    background-color: rgb(0, 92, 0);
+}
+
+.editItems .container-editItems form select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 40%;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 30px;
+    outline: none;
+}

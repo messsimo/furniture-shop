@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css-admin/header-admin.css">
     <link rel="stylesheet" href="css-admin/admin.css">
     <link rel="stylesheet" href="css-admin/add-item.css">
+    <link rel="stylesheet" href="css-admin/edit-items.css">
     <title>AdminPanel</title>
 </head>
 <body>
@@ -16,14 +17,13 @@
             <div class="burger-container">
                 <p>Работа с товаром</p>
                 <a href="/admin-panel/add_item.php">Добавить товар</a>
-                <a href="/admin-panel/edit.php">Редактировать товар</a>
+                <a href="/admin-panel/edit_items.php">Редактировать товар</a>
 
                 <p>Работа с категориями</p>
                 <a href="/admin-panel/add_category.php">Добавить категорию</a>
                 <a href="/admin-panel/edit_category.php">Редактировать категорию</a>
 
                 <p>Работа с магазином</p>
-                <a href="/admin-panel/admin.php">Все товары</a>
                 <a href="/admin-panel/oreders.php">Заказы</a>
                 <a href="/admin-panel/questions.php">Вопросы пользователей</a>
             </div>
