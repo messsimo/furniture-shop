@@ -40,11 +40,12 @@ SitDownPls is an interactive CRUD application that integrates with an API for pa
 
 ## Screenshots
 <p align="center">
-  <img src="images/readme1.png" alt="Скриншот 1" width="200"/>
-  <img src="images/readme2.png" alt="Скриншот 2" width="200"/>
-  <img src="images/readme3.png" alt="Скриншот 3" width="200"/>
-  <img src="images/readme4.png" alt="Скриншот 3" width="200"/>
-  <img src="images/readme5.png" alt="Скриншот 3" width="200"/>
-  <img src="images/readme6.png" alt="Скриншот 3" width="200"/>
-  <img src="images/readme7.png" alt="Скриншот 3" width="200"/>
+  <img src="readme_images/readme1.png" alt="Скриншот 1" width="200"/>
+  <img src="readme_images/readme2.png" alt="Скриншот 2" width="200"/>
+  <img src="readme_images/readme3.png" alt="Скриншот 3" width="200"/>
+  <img src="readme_images/readme4.png" alt="Скриншот 3" width="200"/>
+  <img src="readme_images/readme5.png" alt="Скриншот 3" width="200"/>
+  <img src="readme_images/readme6.png" alt="Скриншот 3" width="200"/>
+  <img src="readme_images/readme7.png" alt="Скриншот 3" width="200"/>
+  <img src="readme_images/readme8.png" alt="Скриншот 3" width="200"/>
 </p>
