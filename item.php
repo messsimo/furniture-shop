@@ -44,7 +44,7 @@
             <h3><?php echo $item["name"]; ?></h3>
             <h1><?php echo number_format($item["price"]); ?> руб</h1>
 
-            <button>Купить в один клик</button><br>  
+            <a href="/cart.php?id=<?php echo $item["id"]; ?>&quantity=1"><button>Купить в один клик</button></a><br>  
 
             <a href="/cart.php?id=<?php echo $item["id"]; ?>&quantity=1">+ Добавить в корзину</a>
         </div>

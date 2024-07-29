@@ -47,7 +47,7 @@
             <label for="number">Ваш номер телефона</label><br>
             <input type="text" name="number" id="number"><br>
 
-            <span class="alert"><?= "*", $_SESSION["alert"] ?? '' ?></span><br>
+            <span class="alert"><?= $_SESSION["alert"] ?? '' ?></span><br>
 
             <button>Отправить</button>
        </form>
