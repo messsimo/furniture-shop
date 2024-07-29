@@ -95,6 +95,11 @@ button {
     font-weight: 400;
     font-size: 16px;
     border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.addItem form button:hover {
+    background-color: rgb(28, 93, 28);
 }
 
 .addItem form input:focus {

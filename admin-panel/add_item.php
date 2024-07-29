@@ -13,8 +13,6 @@
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $categorys = $stmt->fetchAll(2);
-
-
 ?>
 
 <!-- Секция для Добавления товара -->

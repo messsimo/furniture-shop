@@ -1,0 +1,141 @@
+/* Стили для секции Работы с Категориями */
+.category {
+    padding: 100px 100px;
+}
+
+.category h1 {
+    padding-bottom: 25px;
+    font-size: 38px;
+    font-weight: 350;
+}
+
+.category .add-cat form {
+    width: 400px;
+}
+
+.category .add-cat form label {
+    color: grey;
+    font-size: 16px;
+}
+
+.category .add-cat form input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #aeaeae;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.category .add-cat form input:focus {
+    border: 2px solid gray;
+}
+
+.category .add-cat form .cat-alert {
+    color: black;
+    font-size: 14px;
+}
+
+.category .add-cat form button {
+    margin-top: 10px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.category .add-cat form button:hover {
+    background-color: rgb(28, 93, 28);
+}
+
+.category .edit-cat h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.category .edit-cat span {
+    font-size: 15px;
+    color: grey;
+}
+
+.category .edit-cat table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 25px;
+}
+
+.category .edit-cat tr th {
+    text-align: center;
+    width: 0px;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.category .edit-cat tr td button {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.category .edit-cat tr td button:hover {
+    background-color: rgb(28, 93, 28);
+}
+
+.category .edit-cat tr td .btn-remove-cat {
+    background-color: red;
+}
+
+.category .edit-cat tr td .btn-remove-cat:hover {
+    background-color: rgb(169, 38, 38);
+}
+
+.category .edit-cat tr td input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #aeaeae;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.category .edit-cat tr td input:focus {
+    border: 2px solid gray;
+}
+
+.category .edit-cat tr td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+.category .edit-cat tr:last-child td {
+    border-bottom: none;
+}
