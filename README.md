@@ -1,6 +1,6 @@
 ## SitDownPls
 
-SitDownPls is an interactive CRUD application that integrates with an API for payment processing and features an admin panel for seamless store management.
+SitDownPls is an interactive CRUD application and features an admin panel for seamless store management.
 
 
 ## The project includes:
@@ -11,7 +11,6 @@ SitDownPls is an interactive CRUD application that integrates with an API for pa
 - Cart showing the items you have added.
 - Administrator panel: Add, edit, or remove products and categories, plus manage all orders and cold call information.
 - CRUD functionality: Ability to add, view, update, and delete product information.
-- Checkout form with API integration for payment.
 
 
 ## Installation
